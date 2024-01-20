@@ -1,0 +1,91 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  .item_page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+.logo-adv {
+  background-image: url(./img/lsj_img/back.png);
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .girl {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    animation: move ease-in-out 0.8s forwards;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: icon linear infinite 30s;
+    .item {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      img {
+        width: 100%;
+        height: 100%;
+        animation: icon linear infinite 30s reverse;
+        transition: 0.6s;
+        &:hover {
+          scale: 2;
+        }
+      }
+    }
+    .center-logo {
+      width: 400px;
+      height: 400px;
+      animation: icon linear infinite 30s reverse;
+      img {
+        height: 100%;
+        width: 100%;
+        transition: 0.6s;
+        &:hover {
+          scale: 1.3;
+        }
+      }
+    }
+  }
+}
+@keyframes icon {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  to {
+    transform: translate(-200px, 200px);
+  }
+}
+.homepage {
+  background-color: #fff;
+}
