@@ -51,7 +51,19 @@ function App() {
           })}
         </div>
       </div>
-      <div className="item_page homepage"></div>
+      <div className="item_page homepage">
+        <div className="header-bar">
+          <div className="header-logo">
+            <img src="../src/img/lsj_img/header.png" />
+          </div>
+        </div>
+
+        <div className="page-container">
+          <div className="page-item">1</div>
+          <div className="page-item">2</div>
+          <div className="page-item">333</div>
+        </div>
+      </div>
     </div>
   )
 }
