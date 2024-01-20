@@ -63,13 +63,13 @@ function App() {
 
         <div className="page-container">
           <div className="page-item" id="HomePage">
-            1
+            主页
           </div>
           <div className="page-item" id="Introduction">
-            23232
+            简介
           </div>
           <div className="page-item" id="Creativity">
-            333
+            创意园
           </div>
         </div>
       </div>
