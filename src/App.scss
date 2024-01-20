@@ -108,6 +108,7 @@
     }
   }
   .page-container {
+    scroll-behavior: smooth;
     height: calc(100vh - 150px);
     background-color: orange;
     display: flex;

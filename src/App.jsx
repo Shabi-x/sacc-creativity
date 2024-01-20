@@ -56,12 +56,21 @@ function App() {
           <div className="header-logo">
             <img src="../src/img/lsj_img/header.png" />
           </div>
+          <a href="#HomePage">A</a>
+          <a href="#Introduction">B</a>
+          <a href="#Creativity">C</a>
         </div>
 
         <div className="page-container">
-          <div className="page-item">1</div>
-          <div className="page-item">2</div>
-          <div className="page-item">333</div>
+          <div className="page-item" id="HomePage">
+            1
+          </div>
+          <div className="page-item" id="Introduction">
+            23232
+          </div>
+          <div className="page-item" id="Creativity">
+            333
+          </div>
         </div>
       </div>
     </div>
