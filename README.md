@@ -1,9 +1,9 @@
 ##### 须知
 
-git clone <https://github.com/liangshaojun-666/sacc-creativity.git>
-npm i
-npm install pnpm
-pnpm i
+git clone <https://github.com/liangshaojun-666/sacc-creativity.git>;
+npm i;
+npm install pnpm;
+pnpm i;
 
 1.如果想要完善创意园项目，请联系杨航或者我本人，去 package 下的目录内添加一个个人姓名+project 命名的文件夹。例如张三可以取名为 zs_project 在此文件夹下可以添加 Img 文件夹来存储必要的图片资源，或者自行封装组件的 component 文件夹;
 
