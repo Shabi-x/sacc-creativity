@@ -186,13 +186,13 @@
           inset: 0;
           height: 100%;
           width: 100%;
-          animation: typewriter 5s steps(12) infinite forwards;
+          animation: typewriter 5s steps(13) infinite forwards;
         }
 
         &::after {
           width: 5px;
           background-color: #000000;
-          animation: typewriter 5s steps(12) infinite forwards,
+          animation: typewriter 5s steps(13) infinite forwards,
             flashing 0.3s ease-out;
         }
       }
