@@ -1,6 +1,6 @@
 ##### 须知
 
-git cone <https://github.com/liangshaojun-666/sacc-creativity.git>
+git clone <https://github.com/liangshaojun-666/sacc-creativity.git>
 npm i
 npm install pnpm
 pnpm i
