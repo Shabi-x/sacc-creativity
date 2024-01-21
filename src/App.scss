@@ -168,12 +168,43 @@
       margin: 0vh auto;
       display: flex;
       flex-direction: column;
+      position: relative;
+      background-color: #fff;
       .intro-title {
+        width: fit-content;
         flex-grow: 1;
         font-size: 35px;
         font-weight: bolder;
         padding: 10px 0;
         display: flex;
+        position: relative;
+        &::before,
+        &::after {
+          content: '';
+          background-color: #fff;
+          position: absolute;
+          inset: 0;
+          height: 100%;
+          width: 100%;
+          animation: typewriter 5s steps(12) infinite forwards;
+        }
+
+        &::after {
+          width: 5px;
+          background-color: #000000;
+          animation: typewriter 5s steps(12) infinite forwards,
+            flashing 0.3s ease-out;
+        }
+      }
+      @keyframes typewriter {
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes flashing {
+        to {
+          opacity: 0;
+        }
       }
     }
     .intro-content {
