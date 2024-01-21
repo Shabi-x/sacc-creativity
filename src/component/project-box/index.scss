@@ -1,13 +1,31 @@
 .box {
   width: 130px;
   height: 130px;
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.4s;
+  &:hover {
+    scale: 1.2;
+  }
   cursor: pointer;
   .pro-logo {
-    width: 100%;
-    height: 60%;
+    width: 50%;
+    flex: 1;
+    img {
+      margin: 5px 0;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .pro-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  .pro-author {
+    font-size: 16px;
+    color: #7f8c8d;
   }
 }

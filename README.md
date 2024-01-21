@@ -1,8 +1,9 @@
-# React + Vite
+##### 须知
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.如果想要完善创意园项目，请联系杨航或者我本人，去 package 下的目录内添加一个个人姓名+project 命名的文件夹。例如张三可以取名为 zs_project 在此文件夹下可以添加 Img 文件夹来存储必要的图片资源，或者自行封装组件的 component 文件夹;
 
-Currently, two official plugins are available:
+2.去 src/component/project-box/lists.js 的 ProjectList 数组内模仿填写【logo 路径，项目名称，项目作者，id，路由路径】，该组件已经完成封装，只需要填写就会自动生成创意园下的跳转按钮;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3.实现路由跳转，请去 main.jsx 下的 route 数组里配置路由，引入组件、填写路径、组件;
+
+Tips: 0.每次写代码之前记得先拉主分支代码！！！！！！很重要！！！; 1.自己注册组件时，记得组件名大写; 2.该文件配置 scss，不熟悉 scss 使用的也可以用 css 文件; 3.不熟悉 git 使用规范，请咨询学长;

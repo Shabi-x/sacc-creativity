@@ -120,7 +120,7 @@ function App() {
                   src={item.logoSrc}
                   title={item.Project_Title}
                   name={item.Project_author}
-                  toLinks={item.Project_link}></Project>
+                  toLinks={item.Project_path}></Project>
               ))}
             </div>
           </div>
