@@ -4,6 +4,7 @@ import ProjectList from './component/project-box/lists'
 import './App.scss'
 
 function App() {
+  // 旋转动画18个子图片链接
   const imageLinks = [
     '../src/img/lsj_img/r1.png',
     '../src/img/lsj_img/r2.png',
@@ -24,12 +25,13 @@ function App() {
     '../src/img/lsj_img/r17.png',
     '../src/img/lsj_img/r18.png',
   ]
-
+  // 主页导航栏链接
   const hyperLinks = [
     { link: '#HomePage', text: '主页', id: 'HomePage' },
     { link: '#Introduction', text: '简介', id: 'Introduction' },
     { link: '#Creativity', text: '创意园', id: 'Creativity' },
   ]
+  // 介绍文案
   const introduction = {
     title: '欢迎来到计软网安院科协！',
     content:
@@ -38,7 +40,6 @@ function App() {
   const r = 350
   const counts = imageLinks.length
   const perAngle = 360 / counts
-
   const [activeLinkIndex, setActiveLinkIndex] = useState(null)
 
   const handleLinkClick = (index) => {
@@ -46,6 +47,7 @@ function App() {
   }
   return (
     <div className="container">
+      {/* 首页展示，旋转动画逻辑 */}
       <div className="item_page logo-adv">
         <div className="girl">
           <img src="../src/img/lsj_img/girl.png" />
@@ -70,7 +72,10 @@ function App() {
           })}
         </div>
       </div>
+
+      {/* 三个子页面，横向滚动 */}
       <div className="item_page homepage">
+        {/* 导航栏，链接跳转 */}
         <div className="header-bar">
           <div className="header-logo">
             <img src="../src/img/lsj_img/header.png" />
@@ -92,10 +97,16 @@ function App() {
           </div>
         </div>
 
+        {/* 主页，介绍，创意园页面 */}
         <div className="page-container">
+          {/* 主页开始 */}
           <div className="page-item" id="HomePage">
             主页
           </div>
+          {/* 主页结束*/}
+
+          {/* 介绍开始 */}
+
           <div className="page-item" id="Introduction">
             <div className="introduction">
               <div className="intro-title">{introduction.title}</div>
@@ -108,6 +119,10 @@ function App() {
             <img src="../src/img/lsj_img/tran1.png" alt="" />
             <img src="../src/img/lsj_img/tran2.png" alt="" />
           </div>
+          {/* 介绍结束*/}
+
+          {/* 创意园开始 */}
+
           <div className="page-item" id="Creativity">
             <div className="cre-title">
               <img src="../src/img/lsj_img/createList.png" alt="" />
@@ -124,6 +139,8 @@ function App() {
               ))}
             </div>
           </div>
+
+          {/* 创意园结束 */}
         </div>
       </div>
     </div>

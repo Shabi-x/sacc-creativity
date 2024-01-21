@@ -4,9 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 
+// 引入组件
 import Zza_Project from '../src/package/zza_project/index.jsx'
 import Lsj_Project from '../src/package/lsj_project/index.jsx'
 
+// 配置路由路径
 const router = createBrowserRouter([
   {
     path: '/',
@@ -25,6 +27,7 @@ const router = createBrowserRouter([
   //   element:
   // },
 ])
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <React.StrictMode>
