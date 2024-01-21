@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.scss'
 
 function App() {
@@ -21,10 +22,21 @@ function App() {
     '../src/img/lsj_img/r17.png',
     '../src/img/lsj_img/r18.png',
   ]
+
+  const hyperLinks = [
+    { link: '#HomePage', text: '主页', id: 'HomePage' },
+    { link: '#Introduction', text: '简介', id: 'Introduction' },
+    { link: '#Creativity', text: '创意园', id: 'Creativity' },
+  ]
   const r = 350
   const counts = imageLinks.length
   const perAngle = 360 / counts
 
+  const [activeLinkIndex, setActiveLinkIndex] = useState(null)
+
+  const handleLinkClick = (index) => {
+    setActiveLinkIndex(index)
+  }
   return (
     <div className="container">
       <div className="item_page logo-adv">
@@ -56,9 +68,21 @@ function App() {
           <div className="header-logo">
             <img src="../src/img/lsj_img/header.png" />
           </div>
-          <a href="#HomePage">A</a>
-          <a href="#Introduction">B</a>
-          <a href="#Creativity">C</a>
+          <div className="link-groups">
+            {hyperLinks.map((link, index) => {
+              return (
+                <a
+                  href={link.link}
+                  key={index}
+                  className={`header-link ${
+                    activeLinkIndex === index ? 'active' : ''
+                  }`}
+                  onClick={() => handleLinkClick(index)}>
+                  {link.text}
+                </a>
+              )
+            })}
+          </div>
         </div>
 
         <div className="page-container">
